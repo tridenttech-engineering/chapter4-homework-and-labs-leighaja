@@ -7,16 +7,18 @@ using namespace std;
 int main()
 {
   //declare named constant and variables
-  const double COMM_RATE = 0.1;
+  double commissionRate = 0.0;
   double sales = 0.0;
   double commission = 0.0;
 
   //enter input item
+  cout << "Commission Rate: ";
+  cin >> commissionRate;
   cout << "Sales amount: ";
   cin >> sales;
 
   //calculate and display the commision
-  commission = sales * COMM_RATE;
+  commission = sales * commissionRate;
   cout << "Commission: $" << commission << endl;
 
   return 0;
